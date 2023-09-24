@@ -1,0 +1,156 @@
+
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+
+.toolimg{
+
+  overflow: hidden;
+}
+
+
+
+.tool{
+  margin: 50px;
+  border: none;
+  font-size: large;
+  padding: 10px;
+  border-color: red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+button{
+  background-color:transparent;
+  color: rgb(13, 14, 14);
+  padding: 10px;
+  border-radius:35%;
+ 
+ 
+}
+button:hover{
+  color: rgb(25, 26, 26);
+  background-color: #FF8811;
+  font-style:italic;
+  font-weight: bold;
+  border-radius: 100%;
+
+  
+}
+
+/*---------------------------------------tool stop-----------------------------------------------*/
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+   
+  }
+
+  
+#img1{
+  border-radius: 50%;
+}
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 340px;
+    transform: scale(0.8);
+    filter: brightness(95%);
+    transition: 0.9s ease;
+
+   
+}
+
+.card:hover{
+  transform: scale(1.0);
+  filter: brightness(100%);
+   cursor: pointer;
+
+}
+
+  
+  .column {
+   
+    width: 30%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+
+  }
+
+
+  .two{
+    font-size: 100%;
+    font-style: inherit;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+  transform: scale(0.9);
+    
+  }
+  .two:hover{
+    transform: scale(1.0);
+  }
+  
+  
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color:#FF8811;
+    border-top-left-radius:0%;
+    border-top-right-radius: 90%;
+    border-bottom-left-radius:  100%;
+    border-bottom-right-radius: 0%;
+    color: rgb(23, 22, 22);
+  }
+  img{
+    overflow: hidden;
+  }
+
+.single-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 99.9%;
+  transition: 0.5s ease;
+  transform: scale(0.9);
+}
+.single-img:hover{
+  transform: scale(1.0);  /* zoom in the image upto 30% */
+   cursor: pointer;
+}
+ 
+ 
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    border-radius: 5%;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    margin-left: 50%;
+  }
+  
+  .button:hover {
+    background-color: #b1f416;
+  }
+  
+ 
