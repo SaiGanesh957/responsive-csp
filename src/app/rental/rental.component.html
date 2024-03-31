@@ -1,7 +1,7 @@
 <body>
 
   
-  <p class="toolimg">
+  <div class="toolimg">
     <mat-toolbar style="background-color:#f7f7f2;">
      <img style="height: 40px;width: 150px;" src="assets\logo.webp" alt="">
    
@@ -9,13 +9,12 @@
     <button class="tool"  routerLink="/home">Home</button>
     <button class="tool"  routerLink="/rental">Rental</button>
     <button class="tool"  routerLink="/sales">Sales</button>
-    <!-- <button class="tool"  routerLink="/login">Login</button> -->
     <button class="tool" routerLink="/aboutus">about us</button>
     <button class="tool" routerLink="/contactus">Contact us</button>
     <button class="tool" routerLink="/">Logout</button>
   
   </mat-toolbar>
-  </p>
+  </div>
 
   
 <div class="database">
@@ -84,11 +83,43 @@
             <br> <input type="text" name="RollNumber" id="RollNumber" placeholder="Enter Mobile" class="form-control my-1" [(ngModel)]="UpdatedUser.Mobile">
           </div>
           <div class="modal-footer">
-            <button type="button" style="color: #f7f7f2;background-color:rgb(9, 229, 218);" class="btn btn-primary"  data-bs-dismiss="modal" (click)="Update(Roll,UpdatedUser)">Save changes</button>
+            <button type="button" style="color: #f7f7f2;background-color:rgb(9, 229, 218);padding: 10px;" class="btn btn-primary"  data-bs-dismiss="modal" (click)="Update(Roll,UpdatedUser)">Save changes</button>
           </div>
         </div>
       </div>
     </div>
+</div>
+
+
+<div class="rent-cards" *ngFor="let Data of Results; let i = index">
+  <div class="card">
+    <div class="data"><h1>Category :</h1><span> {{Data[3]}}</span></div>
+    <div class="data"><h1>NAME : </h1><span> {{Data[0]}}</span></div>
+    <div class="data"><h1>Gender :</h1><span> {{Data[1]}}</span></div>
+    <div class="data"><h1>Email :</h1><span> {{Data[2]}}</span></div>
+    <div class="data"><h1>Address :</h1><span> {{Data[4]}}</span></div>
+    <div class="data"><h1>City : </h1><span> {{Data[5]}}</span></div>
+    <div class="data"><h1>State : </h1><span> {{Data[6]}}</span></div>
+    <div class="data"><h1>Mobile :</h1><span> {{Data[7]}}</span></div>
+
+  <div class="buttons">
+  <a href="#">Buy</a>
+  <a href="">Pay as Rent</a>
+  </div>
+
+<div class="icons">
+ 2 Bed rooms<span class="material-symbols-outlined"> bed</span>
+ 2 Garage &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="material-symbols-outlined"> garage</span><br>
+ 2 kitchens &nbsp;&nbsp;&nbsp;<span class="material-symbols-outlined">skillet</span>
+ 3 Bath rooms<span class="material-symbols-outlined"> bathtub</span>
+
+
+</div>
+</div>
+<div class="house-img">
+  <img [src]="myPix[i % myPix.length]" />
+</div>
+
 </div>
    
  <div class="heading1">
@@ -157,7 +188,7 @@
                  
   
              <div class="flow top"> 
-                 <img class="imga" src="assets\rent\h1.jpg">
+                 <img class="imga" src="assets\rent\h11.jpg">
                  <h1>Tiny</h1>
                  <p class="by">By<span class="name">STAY GOLD</span></p>
                  <p class="description">A home is like it what i was dreem in my mind iam with this website.</p>

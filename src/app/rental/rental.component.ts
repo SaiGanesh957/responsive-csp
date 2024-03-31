@@ -2,11 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import { LoginService } from '../login.service';
 import { InsertedSuccess, Read, StudentDetails } from '../group';
 
+
+
 @Component({
   selector: 'app-rental',
   templateUrl: './rental.component.html',
+  template: `
+  <img [src]="myPix[randomNumber]" />
+`,
   styleUrls: ['./rental.component.css']
 })
+
+
+
 export class RentalComponent implements OnInit{
   ngOnInit(): void {
     
@@ -88,4 +96,19 @@ export class RentalComponent implements OnInit{
     });
   }
 
+  readonly myPix = [
+    
+    'assets/rent/h7.jpg',
+    'assets/rent/h8.jpg',
+    'assets/rent/h9.jpg',
+    'assets/rent/h10.jpg',
+    'src/assets/rent/h1.jpg',
+    'assets/rent/h5.jpg',
+    'assets/rent/h2.jpg',
+    'assets/rent/h3.jpg',
+    'assets/rent/h4.jpg',
+    'assets/rent/h5.jpg',
+   
+  ]
+  randomNumber = Math.floor(Math.random() * this.myPix.length);
 }

@@ -41,15 +41,6 @@ button:hover{
   
 }
 
-/*---------------------------------------tool stop-----------------------------------------------*/
-
-
-
-
-
-
-
-
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -107,11 +98,10 @@ body {
     padding: 50px;
     text-align: center;
     background-color:#FF8811;
-    border-top-left-radius:0%;
-    border-top-right-radius: 90%;
-    border-bottom-left-radius:  100%;
-    border-bottom-right-radius: 0%;
+   border-radius: 999rem;
     color: rgb(23, 22, 22);
+    margin-left:15% ;
+    max-width: 70%;
   }
   img{
     overflow: hidden;
@@ -126,12 +116,9 @@ body {
   transform: scale(0.9);
 }
 .single-img:hover{
-  transform: scale(1.0);  /* zoom in the image upto 30% */
+  transform: scale(1.0);
    cursor: pointer;
 }
- 
- 
-  
   .title {
     color: grey;
   }
