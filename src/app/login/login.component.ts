@@ -9,7 +9,7 @@ import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
 import { SevenService } from '../seven.service';
 
-
+import { AppComponent } from '../app.component';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -33,7 +33,10 @@ export class LoginComponent implements OnInit,OnDestroy{
 toggleshow(){
   this.showpassword=!this.showpassword;
 }
-
+display()
+{
+  
+}
   Insert() {
     this.ErrorMsg = '';
     this.SuccessMsg = '';

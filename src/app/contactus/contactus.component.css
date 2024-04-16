@@ -1,44 +1,4 @@
 
-
-.example-spacer {
-  flex: 1 1 auto;
-}
-
-
-.toolimg{
-
-  overflow: hidden;
-}
-
-.tool{
-  margin: 50px;
-  border: none;
-  font-size: large;
-  padding: 10px;
-  border-color: red;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  
-}
-button{
-  background-color:transparent;
-  color: rgb(12, 12, 12);
-  padding: 10px;
-  border-radius:35%;
- 
- 
-}
-button:hover{
-  color: rgb(25, 26, 26);
-  background-color: lightyellow;
-  font-style:italic;
-  font-weight: bold;
-  border-radius: 100%;
-
-  
-}
-
 .contact {
   padding: 30px 0;
 }

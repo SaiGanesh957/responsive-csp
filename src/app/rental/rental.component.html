@@ -1,20 +1,7 @@
 <body>
 
   
-  <div class="toolimg">
-    <mat-toolbar style="background-color:#f7f7f2;">
-     <img style="height: 40px;width: 150px;" src="assets\logo.webp" alt="">
-   
-    <span class="example-spacer"></span>
-    <button class="tool"  routerLink="/home">Home</button>
-    <button class="tool"  routerLink="/rental">Rental</button>
-    <button class="tool"  routerLink="/sales">Sales</button>
-    <button class="tool" routerLink="/aboutus">about us</button>
-    <button class="tool" routerLink="/contactus">Contact us</button>
-    <button class="tool" routerLink="/">Logout</button>
-  
-  </mat-toolbar>
-  </div>
+
 
   
 <div class="database">
@@ -101,35 +88,29 @@
     <div class="data"><h1>City : </h1><span> {{Data[5]}}</span></div>
     <div class="data"><h1>State : </h1><span> {{Data[6]}}</span></div>
     <div class="data"><h1>Mobile :</h1><span> {{Data[7]}}</span></div>
-
   <div class="buttons">
   <a href="#">Buy</a>
   <a href="">Pay as Rent</a>
   </div>
-
 <div class="icons">
  2 Bed rooms<span class="material-symbols-outlined"> bed</span>
  2 Garage &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="material-symbols-outlined"> garage</span><br>
  2 kitchens &nbsp;&nbsp;&nbsp;<span class="material-symbols-outlined">skillet</span>
  3 Bath rooms<span class="material-symbols-outlined"> bathtub</span>
-
-
 </div>
 </div>
 <div class="house-img">
   <img [src]="myPix[i % myPix.length]" />
 </div>
-
 </div>
-   
+
+
  <div class="heading1">
   <h1>Some Popular Houses For Rent<span class="material-symbols-outlined">payments</span></h1>
-  
   </div>
       <div style="background-color: #f7f7f2;">
          <div class="container boxcontainer">
-  
-             <div class="flow"> 
+              <div class="flow"> 
                  <img src="assets\rent\h3.jpg">
                  <h1>Family</h1>
                  <p class="by">By<span class="name"> STAY GOLD</span></p>
@@ -138,69 +119,59 @@
                  <span class="newprice">$1500</span>
                  <p class="ships"><span class="material-symbols-outlined">phone_in_talk</span>9493918483</p>
                  <p class="right"><img src="assets\logo.webp" height="40px" width="80px" alt="" style="float: right;"> </p>
-             </div>
-  
-             <div class="flow"> 
-                 <img src="assets\rent\h6.jpg" >
-                 <h1>Bachelor</h1>
-                 <p class="by">By<span class="name">STAY GOLD</span></p>
-                 <p class="description">A house is made of walls and beams; a home is built with love and dreams.iam happy</p>
-                 <span><del class="oldprice">$2500</del></span>
-                 <span class="newprice">$2000</span>
-                 <p class="ships"><span class="material-symbols-outlined">phone_in_talk</span>:9485769377</p>
-                 <p class="right"><img src="assets\logo.webp" height="40px" width="80px" alt="" style="float: right;"> </p>
-             </div>
-  
-             <div class="flow"> 
-                 <img src="assets\rent\h2.jpg" >
-                 <h1>Villa</h1>
-                 <p class="by">By<span class="name">STAY GOLD</span></p>
-                 <p class="description">The magic thing about home is that it feels good to leave, and it feels even better to come back.</p>
-                 <span><del class="oldprice">$3455</del></span>
-                 <span class="newprice">$2673</span>
-                 <p class="ships"><span class="material-symbols-outlined">phone_in_talk</span>:9593746573</p>
-                 <p class="right"><img src="assets\logo.webp" height="40px" width="80px" alt="" style="float: right;">  </p>
-             </div>
-                 
-  
-             <div class="flow top"> 
-                 <img src="assets\rent\h4.jpg" >
-                 <h1>Farmhouse</h1>
-                 <p class="by">By<span class="name"> STAY GOLD</span></p>
-                 <p class="description">A house becomes a home when you can write 'I love you' on the furniture.</p>
-                 <span><del class="oldprice">$3500</del></span>
-                 <span class="newprice">$2999</span>
-                 <p class="ships"><span class="material-symbols-outlined">phone_in_talk</span>:6486386647</p>
-                 <p class="right"><img src="assets\logo.webp" height="40px" width="80px" alt="" style="float: right;">  </p>
-             </div>
-                 
-  
-             <div class="flow top"> 
-                 <img src="assets\rent\h3.jpg">
-                 <h1>Villa</h1>
-                 <p class="by">By<span class="name"> STAY GOLD</span></p>
-                 <p class="description">"Home is where your heart is, and I've found my heart in this place."</p>
-                 <span><del class="oldprice">$8996</del></span>
-                 <span class="newprice">$7652</span>
-                 <p class="ships"><span class="material-symbols-outlined">phone_in_talk</span>6875442569</p>
-                 <p class="right"><img src="assets\logo.webp" height="40px" width="80px" alt="" style="float: right;">  </p>
-             </div>
-                 
-  
-             <div class="flow top"> 
-                 <img class="imga" src="assets\rent\h11.jpg">
-                 <h1>Tiny</h1>
-                 <p class="by">By<span class="name">STAY GOLD</span></p>
-                 <p class="description">A home is like it what i was dreem in my mind iam with this website.</p>
-                 <span><del class="oldprice">$2556</del></span>
-                 <span class="newprice">$1398</span>
-                 <p class="ships"><span class="material-symbols-outlined">phone_in_talk</span>&nbsp;:6395457669</p>
-                 <p class="right"><img src="assets\logo.webp" height="40px" width="80px" alt="" style="float: right;"> </p>
-             </div>
-  
-             <div class="clear">
-             </div>
-  
+              </div>
+          <div class="flow"> 
+              <img src="assets\rent\h6.jpg" >
+              <h1>Bachelor</h1>
+              <p class="by">By<span class="name">STAY GOLD</span></p>
+              <p class="description">A house is made of walls and beams; a home is built with love and dreams.iam happy</p>
+              <span><del class="oldprice">$2500</del></span>
+              <span class="newprice">$2000</span>
+              <p class="ships"><span class="material-symbols-outlined">phone_in_talk</span>:9485769377</p>
+              <p class="right"><img src="assets\logo.webp" height="40px" width="80px" alt="" style="float: right;"> </p>
+          </div>
+          <div class="flow"> 
+              <img src="assets\rent\h2.jpg" >
+              <h1>Villa</h1>
+              <p class="by">By<span class="name">STAY GOLD</span></p>
+              <p class="description">The magic thing about home is that it feels good to leave, and it feels even better to come back.</p>
+              <span><del class="oldprice">$3455</del></span>
+              <span class="newprice">$2673</span>
+              <p class="ships"><span class="material-symbols-outlined">phone_in_talk</span>:9593746573</p>
+              <p class="right"><img src="assets\logo.webp" height="40px" width="80px" alt="" style="float: right;">  </p>
+          </div>
+          <div class="flow top"> 
+              <img src="assets\rent\h4.jpg" >
+              <h1>Farmhouse</h1>
+              <p class="by">By<span class="name"> STAY GOLD</span></p>
+              <p class="description">A house becomes a home when you can write 'I love you' on the furniture.</p>
+              <span><del class="oldprice">$3500</del></span>
+              <span class="newprice">$2999</span>
+              <p class="ships"><span class="material-symbols-outlined">phone_in_talk</span>:6486386647</p>
+              <p class="right"><img src="assets\logo.webp" height="40px" width="80px" alt="" style="float: right;">  </p>
+          </div>
+          <div class="flow top"> 
+              <img src="assets\rent\h3.jpg">
+              <h1>Villa</h1>
+              <p class="by">By<span class="name"> STAY GOLD</span></p>
+              <p class="description">"Home is where your heart is, and I've found my heart in this place."</p>
+              <span><del class="oldprice">$8996</del></span>
+              <span class="newprice">$7652</span>
+              <p class="ships"><span class="material-symbols-outlined">phone_in_talk</span>6875442569</p>
+              <p class="right"><img src="assets\logo.webp" height="40px" width="80px" alt="" style="float: right;">  </p>
+          </div>
+          <div class="flow top"> 
+              <img class="imga" src="assets\rent\h11.jpg">
+              <h1>Tiny</h1>
+              <p class="by">By<span class="name">STAY GOLD</span></p>
+              <p class="description">A home is like it what i was dreem in my mind iam with this website.</p>
+              <span><del class="oldprice">$2556</del></span>
+              <span class="newprice">$1398</span>
+              <p class="ships"><span class="material-symbols-outlined">phone_in_talk</span>&nbsp;:6395457669</p>
+              <p class="right"><img src="assets\logo.webp" height="40px" width="80px" alt="" style="float: right;"> </p>
+          </div>
+          <div class="clear">
+          </div>
          </div>
       </div>
   </body>

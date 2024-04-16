@@ -144,39 +144,6 @@ body{
   }
   
   
-  .example-spacer {
-      flex: 1 1 auto;
-    }
-  
-  
-    
-    .tool{
-    display: flex;
-    justify-content: space-evenly;
-      margin: 48px;
-      border: none;
-      font-size: large;
-      padding: 10px;
-      border-color: red;
-      
-    }
-  button{
-      background-color:transparent;
-      color: rgb(17, 18, 18);
-      padding: 10px;
-      border-radius:35%;
-     
-     
-  }
-   button:hover{
-      color: rgb(25, 26, 26);
-      background-color: rgb(19, 229, 240);
-      font-style:italic;
-      font-weight: bold;
-      border-radius: 100%;
-  
-      
-    }
    @media only screen and (min-width:300px)
     
     {
@@ -207,106 +174,114 @@ body{
 
 
 
-  * {
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+}
+
+.boxcontainer {
+  font-family: Arial, Tahoma;
+}
+
+.container {
+  padding: 20px;
+  border-top: 1px solid #2a2b32;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flow {
+  background-color: #ffffff;
+  float: left;
+  width: calc(92% / 3);
+  border: 1px solid #e8e8f2;
+  box-shadow: #2a2b32;
+  margin-left: 2%;
+  border-radius: 3%;
+  padding: 40px;
+  filter: brightness(90%);
+  transform: scale(0.9);
+  transition: 0.8s;
+  min-height: 650px;
+}
+
+.flow:hover {
+  opacity: 1;
+  filter: brightness(100%);
+  transform: scale(1.0);
+  box-shadow: 10px 20px 200px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.clear {
+  clear: both;
+}
+
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.by {
+  font-size: 16px;
+}
+
+.name {
+  color: #6d6df5;
+  font-weight: bold;
+}
+
+.description {
+  color: #888888;
+  font-size: 18px;
+}
+
+.oldprice {
+  color: #9f9f9f;
+}
+
+.newprice {
+  color: #404040;
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.ships {
+  background-color: lightgreen;
+  color: white;
+  width: 50%;
+  text-align: center;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.seconditems {
+  margin-top: 30px;
+}
+
+.top {
+  margin-top: 30px;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+  .flow {
+      width: 100%; /* Display one item per row */
+      margin-left: 0;
+      margin-bottom: 20px; /* Add some spacing between items */
+      padding: 20px; /* Adjust padding for smaller screens */
   }
-.boxcontainer{
-   
-    font-family: Arial,Tahoma ;
-   
-
-}
-.container{
-    padding: 20px;
-    border-top: 1px  solid #2a2b32;
-   
-
-}
-.flow{
-    background-color: #ffffff;
-    float: left;
-    width: calc(92%/3);
-    border: 1px solid #e8e8f2; 
-    box-shadow: #2a2b32;
-    margin-left: 2%;
-    border-radius: 3%;
-    padding: 40px;
-    filter: brightness(90%);
-    transform: scale(0.9);
-    transition: 0.7s;
-    min-height:300px;
-    
-}
-.clear{
-    clear: both;
-}
-img{
-    display: block;
-    margin: auto;
-    max-width: 100%;
-    max-height: 100%;
-
-}
-h1{
-    font-size: 30px;
-}
-.by{
-    font-size: 16px;
-}
-.name{
-    color: #6d6df5;
-    font-weight: bold;
-}
-.description{
-    color: #888888;
-    font-size: 18px;
-}
-.oldprice{
-    color: #9f9f9f;
-}
-.newprice{
-    color: #404040;
-    display: inline-block;
-    margin-left: 10px;
-    font-weight: bold;
-}
-.ships{
-    background-color:lightgreen;
-    color: white;
-    width: 50%;
-    text-align: center;
-    padding: 5px;
-    border-radius: 4px;
-}
-
-
-.seconditems{
-margin-top: 30px;
-}
-.top{
-    margin-top: 30px;
 }
   </style>
 </head>
 
-<p class="toolimg">
-    <mat-toolbar style="background-color:#f7f7f2;">
-     <img style="height: 40px;width: 150px;" src="assets\logo.webp" alt="">
-   
-    <span class="example-spacer"></span>
-    <button class="tool"  routerLink="/home">Home</button>
-    <button class="tool"  routerLink="/rental">Rental</button>
-    <button class="tool"  routerLink="/sales">Sales</button>
-    <button class="tool" routerLink="/aboutus">about us</button>
-    <button class="tool" routerLink="/contactus">Contact us</button>
-    <button class="tool" routerLink="/">Logout</button>
-  
-  </mat-toolbar>
-  </p>
    <body>
-
-
-    
   <div class="containers">
     <div class="title">Registration</div>
     <div class="content">
@@ -359,36 +334,32 @@ margin-top: 30px;
 
 <div class="shopcard">
   <div class="heading1">
- <h1>Some Popular Houses For Rent<span class="material-symbols-outlined">payments</span></h1>
- 
- </div>
-     <div style="background-color: #f7f7f2;">
-        <div class="container boxcontainer">
- 
+    <h1>Some Popular Houses For Rent<span class="material-symbols-outlined">payments</span></h1>
+    </div>
+        <div style="background-color: #f7f7f2;">
+           <div class="container boxcontainer">
+                <div class="flow"> 
+                   <img src="assets\rent\h3.jpg">
+                   <h1>Family</h1>
+                   <p class="by">By<span class="name"> STAY GOLD</span></p>
+                   <p class="description">"Home is where love resides, memories are created,and laughter never ends."</p>
+                   <span><del class="oldprice">$3000</del></span>
+                   <span class="newprice">$1500</span>
+                   <p class="ships"><span class="material-symbols-outlined">phone_in_talk</span>9493918483</p>
+                   <p class="right"><img src="assets\logo.webp" height="40px" width="80px" alt="" style="float: right;"> </p>
+                </div>
             <div class="flow"> 
-                <img src="assets\rent\h11.jpg" style="height:300px;">
-                <h1>Family</h1>
-                <p class="by">By<span class="name"> STAY GOLD</span></p>
-                <p class="description">"Home is where love resides, memories are created,and laughter never ends."</p>
-                <span><del class="oldprice">$3000</del></span>
-                <span class="newprice">$1500</span>
-                <p class="ships"><span class="material-symbols-outlined">phone_in_talk</span>9493918483</p>
-                <p class="right"><img src="assets\logo.webp" height="40px" width="80px" alt="" style="float: right;"> </p>
-            </div>
- 
-            <div class="flow"> 
-                <img src="assets\rent\h2.jpg" >
+                <img src="assets\rent\h6.jpg" >
                 <h1>Bachelor</h1>
                 <p class="by">By<span class="name">STAY GOLD</span></p>
-                <p class="description">A house is made of walls and beams; a home is built with love and dreams.</p>
+                <p class="description">A house is made of walls and beams; a home is built with love and dreams.iam happy</p>
                 <span><del class="oldprice">$2500</del></span>
                 <span class="newprice">$2000</span>
                 <p class="ships"><span class="material-symbols-outlined">phone_in_talk</span>:9485769377</p>
                 <p class="right"><img src="assets\logo.webp" height="40px" width="80px" alt="" style="float: right;"> </p>
             </div>
- 
             <div class="flow"> 
-                <img src="assets\rent\h3.jpg" >
+                <img src="assets\rent\h2.jpg" >
                 <h1>Villa</h1>
                 <p class="by">By<span class="name">STAY GOLD</span></p>
                 <p class="description">The magic thing about home is that it feels good to leave, and it feels even better to come back.</p>
@@ -397,8 +368,6 @@ margin-top: 30px;
                 <p class="ships"><span class="material-symbols-outlined">phone_in_talk</span>:9593746573</p>
                 <p class="right"><img src="assets\logo.webp" height="40px" width="80px" alt="" style="float: right;">  </p>
             </div>
-                
- 
             <div class="flow top"> 
                 <img src="assets\rent\h4.jpg" >
                 <h1>Farmhouse</h1>
@@ -409,10 +378,8 @@ margin-top: 30px;
                 <p class="ships"><span class="material-symbols-outlined">phone_in_talk</span>:6486386647</p>
                 <p class="right"><img src="assets\logo.webp" height="40px" width="80px" alt="" style="float: right;">  </p>
             </div>
-                
- 
             <div class="flow top"> 
-                <img src="assets\rent\h5.jpg">
+                <img src="assets\rent\h3.jpg">
                 <h1>Villa</h1>
                 <p class="by">By<span class="name"> STAY GOLD</span></p>
                 <p class="description">"Home is where your heart is, and I've found my heart in this place."</p>
@@ -421,24 +388,20 @@ margin-top: 30px;
                 <p class="ships"><span class="material-symbols-outlined">phone_in_talk</span>6875442569</p>
                 <p class="right"><img src="assets\logo.webp" height="40px" width="80px" alt="" style="float: right;">  </p>
             </div>
-                
- 
             <div class="flow top"> 
-                <img src="assets\rent\h6.jpg">
+                <img class="imga" src="assets\rent\h11.jpg">
                 <h1>Tiny</h1>
                 <p class="by">By<span class="name">STAY GOLD</span></p>
-                <p class="description">A hoodie is a sweatshirt with a hood.a drawstring to adjust the hood opening.</p>
+                <p class="description">A home is like it what i was dreem in my mind iam with this website.</p>
                 <span><del class="oldprice">$2556</del></span>
                 <span class="newprice">$1398</span>
                 <p class="ships"><span class="material-symbols-outlined">phone_in_talk</span>&nbsp;:6395457669</p>
                 <p class="right"><img src="assets\logo.webp" height="40px" width="80px" alt="" style="float: right;"> </p>
             </div>
- 
             <div class="clear">
             </div>
- 
+           </div>
         </div>
-     </div>
 </div> 
 
 

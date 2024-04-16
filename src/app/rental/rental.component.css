@@ -3,6 +3,14 @@ body{
     display: flex;
     
   }
+
+  .database{
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00
+    49%, #FC4F4F 80%, #00C0FF 100%);
+   animation:slidebg 5s linear infinite;
+  }
+
+
 .rent-cards{
   display: flex;
   flex-direction: row;
@@ -74,8 +82,7 @@ body{
   border-radius: 20px;
   margin: 10px;
 }
-
-  .house-img img{
+.house-img img{
     height: 350px;
     width: 550px;
     margin-top: 80px;
@@ -87,52 +94,6 @@ body{
     transition: 0.5s;
   }
 
-  
-  
-
-  .database{
-    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00
-    49%, #FC4F4F 80%, #00C0FF 100%);
-   animation:slidebg 5s linear infinite;
-  }
-  
-  
-  .example-spacer {
-      flex: 1 1 auto;
-    }
-
-    
-    .tool{
-      margin: 50px;
-      border: none;
-      font-size: large;
-      padding: 10px;
-      border-color: red;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      
-    }
-.tool:hover{
-  background-color: lightblue;
-}
-
-button{
-      
-      color: rgb(17, 18, 18);
-      padding: 10px;
-      border-radius:35%;
-     
-  }
- button:hover{
-      color: rgb(25, 26, 26);
-      background-color: rgb(248, 246, 246);
-      font-style:italic;
-      font-weight: bold;
-      border-radius: 100%;
-  
-      
-    }
    @media only screen and (min-width:300px)
     
     {
@@ -144,6 +105,7 @@ button{
    
   
 
+
   .heading1{
     padding: 30px;
     background-color: #f7f7f2;
@@ -153,98 +115,111 @@ button{
   font-weight: 900;
 }
 
-.flow:hover{
-    opacity: 1;
-    filter: brightness(100%);
-    transform: scale(1.0);
-    box-shadow: 10px 20px 200px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+
+
+ /* Default styles */
+
+* {
+  box-sizing: border-box;
 }
 
-.right:hover{
-    image-resolution:calc(39%2);
-
+.boxcontainer {
+  font-family: Arial, Tahoma;
 }
 
+.container {
+  padding: 20px;
+  border-top: 1px solid #2a2b32;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.flow {
+  background-color: #ffffff;
+  float: left;
+  width: calc(92% / 3);
+  border: 1px solid #e8e8f2;
+  box-shadow: #2a2b32;
+  margin-left: 2%;
+  border-radius: 3%;
+  padding: 40px;
+  filter: brightness(90%);
+  transform: scale(0.9);
+  transition: 0.8s;
+  min-height: 650px;
+}
 
-  * {
-    box-sizing: border-box;
+.flow:hover {
+  opacity: 1;
+  filter: brightness(100%);
+  transform: scale(1.0);
+  box-shadow: 10px 20px 200px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.clear {
+  clear: both;
+}
+
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.by {
+  font-size: 16px;
+}
+
+.name {
+  color: #6d6df5;
+  font-weight: bold;
+}
+
+.description {
+  color: #888888;
+  font-size: 18px;
+}
+
+.oldprice {
+  color: #9f9f9f;
+}
+
+.newprice {
+  color: #404040;
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.ships {
+  background-color: lightgreen;
+  color: white;
+  width: 50%;
+  text-align: center;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.seconditems {
+  margin-top: 30px;
+}
+
+.top {
+  margin-top: 30px;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+  .flow {
+      width: 100%; /* Display one item per row */
+      margin-left: 0;
+      margin-bottom: 20px; /* Add some spacing between items */
+      padding: 20px; /* Adjust padding for smaller screens */
   }
-.boxcontainer{
-   
-    font-family: Arial,Tahoma ;
-   
-
-}
-.container{
-    padding: 20px;
-    border-top: 1px  solid #2a2b32;
-   
-
-}
-.flow{
-    background-color: #ffffff;
-    float: left;
-    width: calc(92%/3);
-    border: 1px solid #e8e8f2; 
-    box-shadow: #2a2b32;
-    margin-left: 2%;
-    border-radius: 3%;
-    padding: 40px;
-    filter: brightness(90%);
-    transform: scale(0.9);
-    transition: 0.8s;
-    min-height:650px;
-
-    
-}
-.clear{
-    clear: both;
-}
-img{
-    display: block;
-    margin: auto;
-    max-width: 100%;
-    max-height: 100%;
-
-}
-h1{
-    font-size: 30px;
-}
-.by{
-    font-size: 16px;
-}
-.name{
-    color: #6d6df5;
-    font-weight: bold;
-}
-.description{
-    color: #888888;
-    font-size: 18px;
-}
-.oldprice{
-    color: #9f9f9f;
-}
-.newprice{
-    color: #404040;
-    display: inline-block;
-    margin-left: 10px;
-    font-weight: bold;
-}
-.ships{
-    background-color:lightgreen;
-    color: white;
-    width: 50%;
-    text-align: center;
-    padding: 5px;
-    border-radius: 4px;
-}
-
-
-.seconditems{
-margin-top: 30px;
-}
-.top{
-    margin-top: 30px;
 }

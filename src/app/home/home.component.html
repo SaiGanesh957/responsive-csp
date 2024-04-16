@@ -1,110 +1,66 @@
 
 
 <body>
-  
-
-  
-  
-  
-  <p class="toolimg">
-    
-    <mat-toolbar style="background-color:#F7F7F2">
+  <!-- <div class="toolimg">
+    <mat-toolbar class="menubar" style="background-color:#F7F7F2">
      <img style="height: 40px;width: 150px;" src="assets\logo.webp" alt="">
-   
-    <span class="example-spacer"></span>
+    <div class="links">
     <button class="tool"  routerLink="/home">Home</button>
     <button class="tool"  routerLink="/rental">Rental</button>
     <button class="tool"  routerLink="/sales">Sales</button>
     <button class="tool" routerLink="/aboutus">about us</button>
     <button class="tool" routerLink="/contactus">Contact us</button>
     <button class="tool" routerLink="/">Logout</button>
-  
+   </div>
   </mat-toolbar>
-  </p>
-  
-  
-  
-  
+  </div> -->
+
   <div class="bgi">
-    
-  
       <h1>Find Your Future Home Today</h1>
       <h4 >Experience the Future of RealState With StayGold</h4>
       <button routerLink="/rental">Go To BUY</button>
-    
-  <!-- <div >
-    <img  class="imger" src="assets/3d.jpg" style="border-radius:50%"  alt="">
-  </div> -->
   </div>
   <!------------------------------------------------------------feedback----------------------------------------------->
-  <div class="body"><br><br><br>
-  <section id="testimonials" style="margin-bottom: 1px;">
-      <h3 class="title" >What Our Customers Saying!</h3>
-      <div class="testimonial-container">
-        <div class="testimonail">
-          <div class="text">
-            <div class="quote">&#8220;</div>
-            <p class="review">
-              The rental house I stayed in was well-maintained and clean. The property owner took great care 
-              in ensuring that everything was in good working condition. It made my stay comfortable and hassle-free.
-            </p>
-          </div>
-          <div class="info">
-            <div class="pfp">
-              <img src="https://unsplash.it/1250/1250" alt="Den Kerdian" />
-            </div>
-            <div class="information">
-              <span class="name">Messi_Neymar</span>
-              
-            </div>
-          </div>
-        </div>
-        <div class="testimonail">
-          <div class="text">
-            <div class="quote">&#8220;</div>
-            <p class="review">
-              The rental house I lived in had excellent amenities. From a fully equipped kitchen 
-              to a spacious backyard, it had everything I needed to feel at home.<br>
-              <span style="color: red;">"vamos"</span>,siuuuuu
-            </p>
-          </div>
-          <div class="info">
-            <div class="pfp">
-              <img src="https://unsplash.it/1200/1200" alt="Den Kerdian" />
-            </div>
-            <div class="information">
-              <span class="name">Ronaldo</span>
-             
-            </div>
-          </div>
-        </div>
-        <div class="testimonail">
-          <div class="text">
-            <div class="quote">&#8220;</div>
-            <p class="review">
-              The rental house I rented had a responsive and helpful landlord. Whenever I had any questions 
-              or concerns, they were quick to address them and provide assistance. 
-            </p>
-          </div>
-          <div class="info">
-            <div class="pfp">
-              <img src="https://unsplash.it/1300/1300" alt="Den Kerdian" />
-            </div>
-            <div class="information">
-              <span class="name">Sergio Ramos</span>
-              
-            </div>
-          </div>
-        </div>
-        <br><br><br>
-  
-        
-      </div>
-    </section>
+  <div class="body"><br><br>
+    <h3>What Our Customers Saying!</h3>
     
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   
+    <div class="container">
+      <div class="card">
+        <div class="avatar">
+          <img class="image" src='https://unsplash.it/1250/1250' />
+        </div>
+        <div class="content-container">
+          <p class="title">Messi_Neymar</p>
+          <p class="content">
+            The rental house I stayed in was well-maintained and clean. The property owner took great care in ensuring that everything was in good working condition. 
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="avatar">
+          <img class="image" src='https://unsplash.it/1200/1200' />
+        </div>
+        <div class="content-container">
+          <p class="title">Cristiano Ronaldo</p>
+          <p class="content">
+            The rental house I lived in had excellent amenities. From a fully equipped kitchen to a spacious backyard, it had everything I needed to feel at home.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="avatar">
+          <img class="image" src='https://unsplash.it/1300/1300' />
+        </div>
+        <div class="content-container">
+          <p class="title">Sergio Ramos_pepe</p>
+          <p class="content">
+           The rental house I rented had a responsive and helpful landlord. Whenever I had any questions or concerns, they were quick to address them and provide assistance. 
+          </p>
+        </div>
+      </div>
+      
+    </div>
   <!------------------------------------------------------------footer----------------------------------------------->
   
   <div class="pg-footer">
@@ -158,7 +114,8 @@
           
         </div>
         <div class="design-by">
-          <a class="footer-copyright-link" href="#" target="_self"> ©2023. | Designed By: P.Sai Ganesh. | All rights reserved. </a>
+          <p>_______________________________________</p>
+          <a class="footer-copyright-link" href="#" target="_self"> ©2023. | Designed By: P.Sai Ganesh & T.Manideep | All rights reserved. </a>
         </div>
       </footer>
     </div>
